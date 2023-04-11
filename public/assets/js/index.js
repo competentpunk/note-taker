@@ -1,3 +1,5 @@
+// Need to pull in Node, Express, ???
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
