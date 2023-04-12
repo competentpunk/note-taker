@@ -1,14 +1,13 @@
-// Create express server - see express exercises
-
-// define express
+// Define Express
 
 const express = require('express');
 const PORT = 3001;
 const app = express();
 
-// define middleware (json, url encoded, static)
-json();
-
+// Define Middleware (json, url encoded, static)
+app.use(express.urlencoded)({extended: false});
+app.use(express.json);
+app.use(express.static);
 
 // create / define routes 
 
